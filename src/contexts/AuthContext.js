@@ -12,7 +12,7 @@ export const AuthContext = ({ children }) => {
   const [email_address, setEmailAddress] = useState("")
   const [timer, setTimer] = useState()
 
-  const url = "http://192.168.0.103:8000/"
+  const url = "http://192.168.0.11:8000/"
 
   useEffect(() => {
     async function loadUser() {
