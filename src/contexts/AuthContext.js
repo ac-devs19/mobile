@@ -12,7 +12,7 @@ export const AuthContext = ({ children }) => {
   const [email_address, setEmailAddress] = useState("")
   const [timer, setTimer] = useState()
 
-  const url = process.env.EXPO_BASE_URL
+  const url = "http://192.168.0.11:8000/"
 
   useEffect(() => {
     async function loadUser() {

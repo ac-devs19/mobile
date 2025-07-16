@@ -67,8 +67,10 @@ const MyDocumentId = () => {
       const fileInfo = await FileSystem.getInfoAsync(uri, { size: true });
       const fileSizeKB = fileInfo.size / 1024;
 
+      console.log(fileSizeKB)
+
       // Basic clarity check: if size too small (e.g., < 100 KB), assume blurry or compressed
-      if (fileSizeKB < 100) {
+      if (fileSizeKB < 50) {
         return true; // blurry
       }
 
